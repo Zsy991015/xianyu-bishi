@@ -56,12 +56,6 @@ function App() {
     getAllList();
   }, []);
 
-  const functionClick = () => {
-    // 实现 getUserInfoFunction 方法
-    for (let i = 1; i < 4; i++) {
-      getUserInfoFunction(resolveTimeout(`info${i}`), 10000);
-    }
-  };
   const filterData = useMemo(() => {
     if (dataSourse?.length > 0) {
       return dataSourse.filter((ele) => ele.type === keys);
@@ -86,19 +80,19 @@ function App() {
       <Mains data={filterData} />
       <div
         className="getUserInfoFunction1"
-        onClick={getUserInfoFunction(resolveTimeout(`info1`,5000))}
+        onClick={getUserInfoFunction(resolveTimeout(`info1`, 5000))}
       >
         点击测试 getUserInfoFunction Id 1
       </div>
       <div
         className="getUserInfoFunction2"
-        onClick={getUserInfoFunction(resolveTimeout(`info2`,2000))}
+        onClick={getUserInfoFunction(resolveTimeout(`info2`, 2000))}
       >
         控制台看结果 getUserInfoFunction Id 2
       </div>
       <div
         className="getUserInfoFunction3"
-        onClick={getUserInfoFunction(resolveTimeout(`info3`,7000))}
+        onClick={getUserInfoFunction(resolveTimeout(`info3`, 7000))}
       >
         目前等待10秒 getUserInfoFunction Id 3
       </div>
