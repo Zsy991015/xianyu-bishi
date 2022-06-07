@@ -135,7 +135,7 @@ function Mains({ data = [] }) {
   return (
     <MainDiv>
       {data.length > 0 &&
-        data.map((ele) => <Card record={ele} key={ele + "index"} />)}
+        data.map((ele) => <Card record={ele} key={ele.id + "index"} />)}
     </MainDiv>
   );
 }
