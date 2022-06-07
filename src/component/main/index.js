@@ -1,6 +1,5 @@
-import React, { memo, useState } from "react";
+import React, { memo } from "react";
 import styled from "styled-components";
-import { timer } from "../../utils";
 import TimerCom from "./../timerCom/index";
 const MainDiv = styled.div`
   width: 100%;
