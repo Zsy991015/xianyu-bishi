@@ -2,7 +2,7 @@
 ### 1.实现卡片状态和逻辑 （由于json-server接口不能实现数据懒加载所以没有使用懒加载、因为对设备没有要求没有使用media）
 #### 1.下载依赖 
     npm i
-#### 2.启动mock接口 
+#### 2.启动mock接口   (mac 需要 sudo npm i -g json-server)
     进入 jsonSever 文件夹下运行指令 json-server --watch --port 53000 index.json
 #### 3.启动项目
     npm start
